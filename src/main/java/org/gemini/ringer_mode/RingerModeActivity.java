@@ -8,7 +8,7 @@ import android.os.Process;
 public abstract class RingerModeActivity extends Activity
 {
     @Override
-    protected void onCreate(Bundle bundle)
+    protected final void onCreate(Bundle bundle)
     {
         super.onCreate(bundle);
         AudioManager audioManager =
@@ -18,7 +18,7 @@ public abstract class RingerModeActivity extends Activity
     }
 
     @Override
-    protected void onDestroy()
+    protected final void onDestroy()
     {
         super.onDestroy();
         Process.killProcess(Process.myPid());
