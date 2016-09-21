@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.gemini.ringer_mode"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0">
 
     <uses-sdk android:minSdkVersion="4" />
@@ -9,6 +9,8 @@
         <activity android:name=".RingerNormalActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="Normal Ringer Mode"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -20,6 +22,8 @@
         <activity android:name=".RingerVibrateActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="Vibrate Ringer Mode"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -31,6 +35,8 @@
         <activity android:name=".RingerSilentActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="Silent Ringer Mode"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
