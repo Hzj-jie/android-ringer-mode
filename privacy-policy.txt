@@ -1,0 +1,2 @@
+This application requires no specific permissions. It does not collect, store or
+send any data for any purpose.
